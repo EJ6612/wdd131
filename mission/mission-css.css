@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#content {
+    max-width: 40%;
+    border: 1px solid darkgray;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+#content > p {
+    color: #4F9ACF;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+#content > h1 {
+    text-align: center;
+}
+
+hr {
+    margin-bottom: 50px;
+    color: #e2e2e2;
+    border-color: #e2e2e2;
+    border-style: solid;
+}
+
+p {
+    text-align: left;
+}
+
+#italiced {
+    font-style: italic;
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#topics {
+    line-height: 1.5em;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.list {
+    list-style-type:decimal;
+}
+li {
+    margin-bottom: 15px;
+}
