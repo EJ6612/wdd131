@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="meta-css.css" rel="stylesheet">
     <script defer src="variables-constants.js"></script>
+    <script src="dom.js" defer></script>
     <title>W01 | meta-css</title>
 </head>
 <body>
@@ -17,8 +18,18 @@
         <p>The foundational technologies that power websites and web applications</p>
         <hr>
         <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+
+
+        <label for="webdevlist">Choose One:</label>
+        <select name="code" id="webdevlist">
+            <option>Choose One:</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select>                   
+            
         <div id="topics">
-            <h2>HyperText Markup Language</h2>
+            <h2 id="html">HyperText Markup Language</h2>
             <ul class="list">
                 <li>Defines the structure and content of a web page.</li>
                 <li>Without HTML there's nothing for the browser to display.</li>
@@ -35,6 +46,8 @@
             </ul>
         </div>
     </div>
+
+
                     
 </body>
 </html>
