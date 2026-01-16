@@ -22,6 +22,7 @@ selectElem.addEventListener('change', function(){
         document.querySelector('body').style.backgroundColor = "white";
         document.querySelector('h1').style.color = "black";
         document.getElementById('ms-p').style.color = "black";
+        document.getElementById('italiced').style.color = "black";
         document.querySelector('ol').style.color = "black";
     }
 
@@ -36,6 +37,7 @@ selectElem.addEventListener('change', function(){
         document.querySelector('body').style.backgroundColor = "black";
         document.querySelector('h1').style.color = "white";
         document.getElementById('ms-p').style.color = "white";
+        document.getElementById('italiced').style.color = "white";
         document.querySelector('ol').style.color = "white";
     }
 })
