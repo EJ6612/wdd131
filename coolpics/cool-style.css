@@ -1,0 +1,140 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Basics */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background-color: #ccc;
+}
+
+header,
+main,
+footer {
+  border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+
+/* Header */
+header {
+    background-color: rgb(38, 109, 201);
+    color: white;
+    text-align: center;
+}
+
+h1 header {
+    color: white;
+}
+
+nav {
+    padding: 0.5em;
+}
+
+nav a {
+    padding: 20px;
+    color: white;
+    display: none;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+
+/* Main */
+main {
+    padding: 1rem;
+}
+
+main h1 {
+    padding-bottom: 0.5em;
+}
+
+section {
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 20px black;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.the-cool-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#image-collection {
+    display: grid;
+    width: 80%;
+    gap: 1rem;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgb(38, 109, 201);
+    padding: 0.5em;
+    color: white;
+}
+
+
+/* Change for screen sizes */
+@media screen and (min-width: 700px) {
+    #image-collection {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    nav a {
+        display: inline;
+    }
+
+    nav {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #image-collection {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main h1 {
+        font-size: medium;
+    }
+}
+
+
+/*
+    AI Disclaimer: 
+    I used duck.ai to help guide me in debugging issues. 
+    Copy/Paste was not used with the AI.
+    All comments are my own. 
+*/
