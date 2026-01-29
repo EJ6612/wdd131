@@ -14,8 +14,12 @@ function openModal(e) {
     
     const img = e.target;
     const src = img.getAttribute('src');
+    const alt = "A cool picture.";
 
     modalImage.src = src;
+    modalImage.alt = alt;
+
+    console.log(modalImage.alt);
 
     modal.showModal();
     
