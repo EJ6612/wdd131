@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    align-content: center;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+    max-width: 60%;
+    margin: 2em;
+}
+
+ul a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav-ponder {
+    background-color: darkblue;
+}
+
+.main-nav-ponder a {
+    color: white;
+}
+
+.main-nav-ponder a:hover {
+    text-decoration: none;
+    color: gold;
+    font-weight: 800;
+}
+
+.main-nav-ponder li {
+    margin: 1em;
+    padding: 1em;
+}
+
+.main-nav-ponder li:hover {
+    margin: 1em;
+    background-color: black;
+}
+
+/**/
+.main-nav-prove {
+    background-color: cyan;
+}
+
+.main-nav-prove a {
+    color: black;
+}
+
+.main-nav-prove a:hover {
+    text-decoration: none;
+    color: purple;
+    font-weight: 800;
+}
+
+.main-nav-prove li {
+    margin: 1em;
+    padding: 1em;
+}
+
+.main-nav-prove li:hover {
+    margin: 1em;
+    background-color: pink;
+}
