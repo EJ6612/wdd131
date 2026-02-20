@@ -115,3 +115,10 @@ students.forEach(function(item) {
     name.innerHTML = html;
     container.appendChild(name);
 });
+
+const nums = [1, 2, 3, 4];
+const sum = nums.reduce(function totalNums(total, item){ return total + item; });
+const avg = sum / 4;
+
+console.log(sum);
+console.log(avg);
