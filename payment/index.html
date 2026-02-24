@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+     <meta name="author" content="Elijah Dodge">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="card.css" >
+    <script src="card.js" defer></script>
+    <title>Credit Card Payment</title>
+</head>
+<body>
+    <header><h1>not a sketchy site</h1></header>
+
+    <main>
+        <section class="errors"></section>
+        <form id="creditCardForm" action="#" method="get">
+            <div id="formGrid">
+                <figure id="cardFront">
+                    <div class="cardFrontTop">
+                        <h3 id="total">TOTAL:</h3>
+                        <h3>💳</h3>
+                    </div>
+                    <div id="cardFrontForm" action="#" method="get">
+                        <div class="frontFormTop">
+                            <label for="cardNumber">CARD NUMBER</label>
+                            <input 
+                                type="text"
+                                id="cardNumber"
+                                name="cardNumber"
+                                pattern="[0-9]{16}"
+                                placeholder="1234 5678 9101 1020"
+                                required 
+                            />
+                        </div>
+                        <div class="frontFormBottom">
+                            <div class="nameForm">
+                                <label for="cardHolderName">CARD HOLDER</label>
+                                <input 
+                                    type="text"
+                                    id="cardHolderName"
+                                    name="fullName"
+                                    placeholder="Jane Doe"
+                                    required
+                                />
+                            </div>
+
+                            <div class="expirationDateForm">
+                                <label for="expirationDate">EXPIRATION</label>
+                                <div class="expForm">
+                                    <input 
+                                        type="text" 
+                                        id="month" 
+                                        name="expMonth" 
+                                        placeholder="MM" 
+                                        aria-labelledby="expirationDate"
+                                        required
+                                    />
+                                    <input 
+                                        type="text" 
+                                        id="year" 
+                                        name="expYear" 
+                                        placeholder="YY" 
+                                        aria-labelledby="expirationDate"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                <figure id="cardBack">
+                    <div class="strip"></div>
+                    <div id="cardBackForm" action="#" method="get">
+                        <label for="securityCode">CVC/CVV</label>
+                        <input 
+                            type="[0-9]{3}"
+                            id="securityCode"
+                            name="securityCode"
+                            placeholder="xxx"
+                            required
+                        />
+                    </div>
+                </figure>
+                <div id="buttonContainer">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+    <footer>© Elijah Dodge 2026</footer>
+    
+</body>
+</html>
