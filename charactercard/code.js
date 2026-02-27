@@ -20,13 +20,20 @@ const character =
         buttonHoverBGColor: "#00e339",
         buttonHoverColor: "#033743",
 
+        extinctAlert: function() {
+            alert("The Green Sea Turtle is now extinct :(");
+        },
+        
         attacked: function() {
             if(this.health > 0) {
                 this.health -= this.attackDamage;
+                if (this.health == 0) {
+                    this.extinctAlert();
+                }
             }
 
             else {
-                alert("The Green Sea Turtle is now extinct :(");
+                this.extinctAlert();
             }
         },
 
