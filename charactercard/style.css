@@ -1,0 +1,60 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+header, footer {
+    background-color: #d1ffb6;
+    padding: 1em;
+    box-shadow: 0px 1px 6px black;
+    color:#000000;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px #282828;
+    width: 400px;
+    margin: 100px auto;
+    display: grid;
+}
+
+.heroImage {
+    width: 400px;
+    border-radius: 15px 15px 0 0;
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: -4px 0 20px 0;
+    padding: 15px 0 15px 35px;
+}
+
+.stats {
+    margin: -5px 15px 7px 35px;
+    text-align: left;
+}
+
+.stats p {
+    margin: 5px 0;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.55s ease;
+    transition: color 0.5s ease;
+}
+
+button:hover {
+    background-color: #00e339;
+    color: #033743;
+}            
