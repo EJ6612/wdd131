@@ -31,10 +31,13 @@ const character =
         },
 
         levelUp: function() {
-            this.level += 1;
+            if (this.health > 0) {
+            
+                this.level += 1;
 
-            if(this.attackDamage > 4) {
-                this.attackDamage -= 2;
+                if(this.attackDamage > 4) {
+                    this.attackDamage -= 2;
+                }
             }
         }
     }
