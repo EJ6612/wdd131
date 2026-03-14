@@ -101,7 +101,13 @@ main {
     font-weight: 500;
     max-width:fit-content;
     padding: 3px 12px;
-    font-size:medium
+    font-size: medium;
+    margin-left: 8px;
+}
+
+.food-tags {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .food-info h2 {
