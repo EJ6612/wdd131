@@ -1,63 +1,63 @@
 const items = [
     {
         name: 'Loveseat (Pink)',
-        image: 'images/loveseat_pink.jpg',
+        image: 'images/loveseat_pink.webp',
         description: 'This loveseat is great for weddings and anniversaries.',
         tags: ['seat', 'pink'],
         price: '$100'
     }, 
     {
         name: 'Table Centerpiece (Bowl)',
-        image: 'images/bowl_centerpiece.jpg',
+        image: 'images/bowl_centerpiece.webp',
         description: 'These simple centerpieces complement a table very well.',
         tags: ['centerpiece', 'flowers', 'bowl'],
         price: '$10/each'
     },
     {
         name: 'Ceremony ',
-        image: 'images/ceremony_backdrop.jpg',
+        image: 'images/ceremony_backdrop.webp',
         description: 'This backdrop includes the white drapes, arch frames, and flowers.',
         tags: ['backdrop', 'frames', 'arches', 'white'],
         price: '$600'
     },
     {
         name: 'Table Centerpiece (Vases)',
-        image: 'images/cups_centerpiece.jpg',
+        image: 'images/cups_centerpiece.webp',
         description: 'These simple centerpieces complement a table very well.',
         tags: ['centerpiece', 'vase', 'flowers'],
         price: '$12/each'
     },
     {
         name: 'Floor Flower Decoration (Small)',
-        image: 'images/floor_flowers_small.jpg',
+        image: 'images/floor_flowers_small.webp',
         description: '',
         tags: ['floor', 'flowers', 'frame', 'decoration'],
         price: '$10/each'
     },
     {
         name: 'Floor Flower Decoration (Large)',
-        image: 'images/floor_flowers_large.jpg',
+        image: 'images/floor_flowers_large.webp',
         description: '',
         tags: ['floor', 'flowers', 'decoration'],
         price: '$15/each'
     },
     {
         name: "Couple's Table (with flowers)",
-        image: 'images/overlaid_flowers_table.jpg',
+        image: 'images/overlaid_flowers_table.webp',
         description: 'Includes flowers and tablecloth.',
         tags: ['table', 'flowers'],
         price: '$100'
     },
     {
         name: 'Table Centerpiece (Frame)',
-        image: 'images/square_centerpiece.jpg',
+        image: 'images/square_centerpiece.webp',
         description: 'These simple centerpieces complement a table very well.',
         tags: ['centerpiece', 'frame', 'flowers'],
         price: '$10/each'
     },
     {
         name: 'Wedding Entrance',
-        image: 'images/wedding_entrance.jpg',
+        image: 'images/wedding_entrance.webp',
         description: 'Includes drapes, programmable lights, flowerwall, flower columns.',
         tags: ['entrance', 'wedding', 'white', 'colors'],
         price: '$900'
