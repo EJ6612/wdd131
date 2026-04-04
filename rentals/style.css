@@ -13,11 +13,11 @@
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(
-    --primary-color
+    --secondary-color
   ); /* headlines on a white background */
   --headline-color-on-color: white; /* headlines on a colored background */
   --paragraph-color-on-white: var(
-    --primary-color
+    --secondary-color
   ); /* paragraph text on a white background */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
   --paragraph-background-color: var(--primary-color);
@@ -69,6 +69,8 @@ nav {
   list-style-type: none;
   display: flex;
   z-index: 2;
+  font-family: var(--heading-font);
+  font-weight: 900;
 }
 
 nav a {
