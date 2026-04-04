@@ -20,7 +20,7 @@
   ); /* paragraph text on a white background */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
   --paragraph-background-color: var(--primary-color);
-  --nav-link-color: var(--accent2-color);
+  --nav-link-color: black;
   --nav-background-color: var(--primary-color);
   --nav-hover-link-color: var(--secondary-color);
   --nav-hover-background-color: var(--accent1-color);
