@@ -69,7 +69,7 @@ nav {
   display: flex;
   z-index: 2;
   font-family: var(--heading-font);
-  font-weight: 900;
+  font-weight: 800;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -265,7 +265,7 @@ hr {
         display: flex;
         z-index: 2;
         font-family: var(--heading-font);
-        font-weight: 900;
+        font-weight: 800;
         flex-wrap: nowrap;
     }
 
