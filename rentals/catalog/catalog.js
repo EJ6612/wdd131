@@ -1,13 +1,5 @@
 const items = [
     {
-        name: 'Loveseat (Pink)',
-        alt: 'Pink loveseat that fits two people.',
-        image: 'images/loveseat_pink.webp',
-        description: 'This loveseat is great for weddings and anniversaries.',
-        tags: ['seat', 'pink'],
-        price: '$100'
-    }, 
-    {
         name: 'Table Centerpiece (Bowl)',
         alt: 'A table with a centerpiece in the center. It is a white bowl with colorful flowers.',
         image: 'images/bowl_centerpiece.webp',
@@ -16,12 +8,12 @@ const items = [
         price: '$10/each'
     },
     {
-        name: 'Ceremony Backdrop',
-        alt: 'White backrop made of white drapes (about 10 ft tall). In front are three metal-looking frame arches. Each one has a cluster of flowers attached.',
-        image: 'images/ceremony_backdrop.webp',
-        description: 'This backdrop includes the white drapes, arch frames, and flowers.',
-        tags: ['backdrop', 'frames', 'arches', 'white'],
-        price: '$600'
+        name: 'Table Centerpiece (Frame)',
+        alt: 'A table with a centerpiece in the center. It is a metallic cube frame with flowers inside. Said flowers stick out.',
+        image: 'images/square_centerpiece.webp',
+        description: 'These simple centerpieces complement a table very well.',
+        tags: ['centerpiece', 'frame', 'flowers'],
+        price: '$10/each'
     },
     {
         name: 'Table Centerpiece (Vases)',
@@ -29,7 +21,7 @@ const items = [
         image: 'images/cups_centerpiece.webp',
         description: 'These simple centerpieces complement a table very well.',
         tags: ['centerpiece', 'vase', 'flowers'],
-        price: '$12/each'
+        price: '$10/each'
     },
     {
         name: 'Floor Flower Decoration (Small)',
@@ -56,12 +48,20 @@ const items = [
         price: '$100'
     },
     {
-        name: 'Table Centerpiece (Frame)',
-        alt: 'A table with a centerpiece in the center. It is a metallic cube frame with flowers inside. Said flowers stick out.',
-        image: 'images/square_centerpiece.webp',
-        description: 'These simple centerpieces complement a table very well.',
-        tags: ['centerpiece', 'frame', 'flowers'],
-        price: '$10/each'
+        name: 'Loveseat (Pink)',
+        alt: 'Pink loveseat that fits two people.',
+        image: 'images/loveseat_pink.webp',
+        description: 'This loveseat is great for weddings and anniversaries.',
+        tags: ['seat', 'pink'],
+        price: '$100'
+    }, 
+    {
+        name: 'Ceremony Backdrop',
+        alt: 'White backrop made of white drapes (about 10 ft tall). In front are three metal-looking frame arches. Each one has a cluster of flowers attached.',
+        image: 'images/ceremony_backdrop.webp',
+        description: 'This backdrop includes the white drapes, arch frames, and flowers.',
+        tags: ['backdrop', 'frames', 'arches', 'white'],
+        price: '$600'
     },
     {
         name: 'Wedding Entrance',
@@ -110,8 +110,8 @@ function search() {
 	})
 }
 
-let randomNum = Math.floor(Math.random()* items.length);
-console.log(randomNum);
+// let randomNum = Math.floor(Math.random()* items.length);
+// console.log(randomNum);
 
 function tagTemplate(tags) {
     return tags.map((tag)=> `<h3>${tag}</h3>`).join(' ');
@@ -136,7 +136,9 @@ function renderitem(item) {
 }
 
 function init() {
-	renderitem(items[randomNum]);
+    items.forEach(function(item) {
+		renderitem(item);
+	})
 }
 
 init();
